@@ -49,6 +49,10 @@ footer {
     width: 100%;
 }
 
+h3 {
+    margin-top: 20px;
+}
+
 .cta-btn {
     padding: 10px;
     color: #ffffff;

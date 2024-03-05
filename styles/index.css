@@ -78,3 +78,22 @@ footer {
     font-size: 30px;
     font-family: 'Bebas Neue', sans-serif;
 }
+
+.text {
+    margin-top: 10px;
+}
+
+.div-left{
+    margin-left: 30px;
+}
+
+.div-right {
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+img {
+    text-align: center;
+    height: 350px;
+    width: auto;
+}
