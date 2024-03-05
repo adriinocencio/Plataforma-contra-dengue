@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /><!-- Biblioteca JS Swiper (carrossel de img) -->
+    <title>Início - TODOS CONTRA A DENGUE</title>
+</head>
+<body>
+    <header>
+        <h1 class="header">TODOS CONTRA A DENGUE</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./prevencao.html">Prevenção</a></li>
+                <li><a href="./demografia.html">Dados</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/banner1.png" alt="Imagem 1"></div>
+            <div class="swiper-slide"><img src="./img/banner2.png" alt="Imagem 2"></div>
+            <div class="swiper-slide"><img src="./img/banner3.png" alt="Imagem 3"></div>
+        </div>
+
+        <!-- Adicione a paginação e a navegação do carrossel -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <main>
+
+        <section id="mosquito">
+            <h2><i>Aedes aegypti</i></h2>
+            <p>Informações sobre o mosquito Aedes aegypti.</p>
+            <!-- Adicione mais conteúdo conforme necessário -->
+        </section>
+    
+        <section id="prevencao">
+            <h2>Prevenção</h2>
+            <p>Dicas e orientações para prevenir a reprodução do mosquito transmissor da dengue.</p>
+            <!-- Adicione mais conteúdo conforme necessário -->
+        </section>
+    
+        <section id="sintomas">
+            <h2>Sintomas</h2>
+            <p>Conheça os sintomas da dengue e saiba quando procurar ajuda médica.</p>
+            <!-- Adicione mais conteúdo conforme necessário -->
+        </section>
+    
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para relatar casos, tirar dúvidas ou obter mais informações.</p>
+            <!-- Adicione formulário de contato ou informações de contato -->
+        </section>
+    </main>
+
+    <footer>
+        <p><i><b>Dia D Combate à Dengue - Sumaré</b></i></p>
+        <p><i>Adrielly Inocencio, Daiana Ferreira, Enzo dos Santos, Ollyver Osório e Ryan Brandão</i></p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+<!-- Adicione a referência ao script Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Adicione o script de inicialização do Swiper -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, // Tempo de transição entre slides em milissegundos (5 segundos no exemplo)
+            },
+            loop: true, // Habilita a repetição do carrossel
+        });
+    });
+</script>
+
+</html>
